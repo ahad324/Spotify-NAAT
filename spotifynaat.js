@@ -15,17 +15,17 @@ let songtime=  document.getElementsByClassName('songtime')
 
 
 let songs = [
-    { songName: "Ambassador-FairyTail", filePath: "1.mp3", coverPath: "1.jpg" },
-    { songName: "Agency - Talha Anjum ", filePath: "2.mp3", coverPath: "2.jpg" },
-    { songName: "Mera Dil Ye Pukare Aaja Remix ", filePath: "3.mp3", coverPath: "3.jpg" },
-    { songName: "Banjara-Lofi[Slowed+Reverb]", filePath: "4.mp3", coverPath: "4.jpg" },
-    { songName: "Daku[Slowed+Reverb]", filePath: "5.mp3", coverPath: "5.jpg" },
-    { songName: "Hardy Sandhu -Backbone ", filePath: "6.mp3", coverPath: "6.jpg" },
-    { songName: "Insane -[Slowed+Reverb]", filePath: "7.mp3", coverPath: "7.jpg" },
-    { songName: "60 mins of Hindi Lofi Songs ", filePath: "8.mp3", coverPath: "8.jpg" },
-    { songName: "NO-LOVE [Slowed+Reverb] ", filePath: "9.mp3", coverPath: "9.jpg" },
-    { songName: "DIVINE-3:59[Slowed+Reverb]", filePath: "10.mp3", coverPath: "10.jpg" },
-    { songName: "SAMJHAWAN -Arjit Singh", filePath: "11.mp3", coverPath: "11.jpg" }
+    { songName: "Ye-duniya chor di hmne", filePath: "1.mp3", coverPath: "1.jpg" },
+    { songName: "Quran Lofi-short ", filePath: "2.mp3", coverPath: "2.jpg" },
+    { songName: "Is Karam ka karu shukr...", filePath: "3.mp3", coverPath: "3.jpg" },
+    { songName: "Aye sabz Gunbad Waly", filePath: "4.mp3", coverPath: "4.jpg" },
+    { songName: "Hale-Dil Kisko sunaye", filePath: "5.mp3", coverPath: "5.jpg" },
+    { songName: "Har waqt tasavur ", filePath: "6.mp3", coverPath: "6.jpg" },
+    { songName: "Kabe Ki ronaq", filePath: "7.mp3", coverPath: "7.jpg" },
+    { songName: "Lajpal NABI mere... ", filePath: "8.mp3", coverPath: "8.jpg" },
+    { songName: "Main Kabe ko Dekhu-ga ", filePath: "9.mp3", coverPath: "9.jpg" },
+    { songName: "The Way of Tears", filePath: "10.mp3", coverPath: "10.jpg" },
+    { songName: "Rehman Ya Rehman", filePath: "11.mp3", coverPath: "11.jpg" }
 
 ]
 songitem.forEach((element, i) => {

@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+    background: black;
+  }
+  nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+    
+  }
+  label.logo{
+    color: rgb(74, 210, 74);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+   
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    z-index: 999;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: rgb(74, 210, 74);
+    transition: .5s;
+    color: black;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+ 
+
+
+
+.container {
+    min-height: 73vh;
+    background: black;
+    color: white;
+
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 10px;
+    padding: 40px;
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myprogressbar {
+    width: 70vw;
+    cursor: pointer;
+
+}
+
+input[type=range] {
+    height: 33px;
+    
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 11px;
+    cursor: pointer;
+   
+    box-shadow: -1px 1px 5px red, 1px -1px 5px red;
+    background: black;
+    border-radius: 30px;
+    border: 1px solid red;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 2px 2px 6px red;
+    border: 1px solid black;
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    background: red;
+    color: red;
+    cursor: pointer;
+    
+    margin-top: -6px;
+}
+input::-ms-thumb{
+    background-color: red;
+    color: red;
+}
+
+
+.songitem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 40px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.songitem::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: cyan;
+    
+}
+
+.songname {
+    font-weight: bolder;
+    font-size: medium;
+    margin-left: 10px;
+    text-shadow: 1px 1px 3px skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.songitem img {
+    width: 50px;
+    margin: 0px 4px;
+    border-radius: 100px;
+    height: 40px;
+
+}
+
+.timestamp {
+    margin: 0 23px;
+    font-family: cursive;
+
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songitemcontainer {
+    margin-top: 50px;
+
+
+}
+
+.songinfo {
+    position: absolute;
+    left: 12%;
+    margin-top: 30px;word-spacing: 5px;
+    width: 30%;
+   font-size: large;
+   font-style: italic;
+    
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    width: 10%;
+    
+    margin-right: 2%;
+}
+
+.songlist {
+    width: 50%;
+
+}
+.songitem{
+    height: 8vh;
+    transform: perspective(300px);
+}
+.songitem img{
+    width: 20%;
+    height: 7vh;
+    transform: rotatex(0deg) rotateY(-30deg) rotatez(0deg);
+}
+
+.songitem span{
+    font-size: large;
+    font-style: oblique;
+}
+
+.songitem:hover {
+
+
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    background: black;
+    color: white;
+    
+    box-shadow: 1px 1px 3px 1px whitesmoke, -1px -1px 3px 1px whitesmoke;
+   
+}
+
+@media (max-width: 968px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 10px;
+      line-height: 80px;
+    }
+    
+    nav ul li a{
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 875px){
+    .checkbtn{
+      display: block;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 90px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover, a.active{
+      background: none;
+      color: green;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+
+
+@media screen and (max-width:875px) {
+    .container {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .songlist {
+
+        width: 100%;
+    }
+
+    .songitem {
+        width: 100%;
+    }
+
+    .songitemcontainer {
+        min-width: 200px;
+        max-width: 500px;
+    }
+
+    .songitem:hover {
+
+
+        transition-duration: 1.5s;
+        transition-timing-function: ease;
+        background: black;
+        color: white;
+        font-weight: bolder;
+        box-shadow: 2px 2px 5px 1px whitesmoke, -2px -2px 5px 1px whitesmoke;
+
+    }
+
+    nav ul li {
+        font-size: 0.4rem;
+        margin: 1%;
+        padding: 0px 0px;
+        border-radius: 5px;
+    }
+
+    .brand {
+        font-size: 1rem;
+        margin-left: -10px;
+    }
+
+    .brand img {
+        width: 45px;
+        padding: 0 2px;
+    }
+
+    .songinfo {
+        position: absolute;
+        width: 80%;
+        margin-top: -60px;
+        height: 0vh;
+        text-align: center;
+        margin-left: -30px;
+    }
+    .songinfo img{
+        width: 8%;
+    }
+    #myprogressbar{
+        width: 90%;
+        cursor: pointer;
+        margin-top: -6px;
+        margin-left: 5vw;
+    }
+    }
+
+
+
+.icons {
+    margin-top: 20px;
+}

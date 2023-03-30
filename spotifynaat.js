@@ -3,7 +3,7 @@ console.log ("Welcome to Spotify")
 
 // initialization
 let songindex = 0;
-let audioElement = new Audio('2.mp3');
+let audioElement = new Audio('1.mp3');
 let masterplay = document.getElementById('masterplay');
 let myprogressbar = document.getElementById('myprogressbar');
 let gif = document.getElementById('gif');
